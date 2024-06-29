@@ -1,0 +1,146 @@
+.skills {
+  width: 100%;
+  height: auto;
+  background-color: #25262f;
+  padding-top: 50px;
+  background: url(/img/skill-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.skills .container .section-heading {
+  font-size: 30px;
+  position: relative;
+  padding-left: 10px;
+  max-width: 100%;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(251, 255, 34);
+}
+
+.skills .container .section-heading::before {
+  content: ""; /* Ensure the pseudo-element is created */
+  display: block; /* or inline-block depending on your needs */
+  position: absolute; /* Or relative/absolute depending on positioning */
+  left: -16px;
+  width: 50px; /* Adjust width and height as needed */
+  height: 50px; /* Adjust width and height as needed */
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(251, 229, 124, 0.599) 0%,
+    rgba(255, 255, 255, 0.334) 100%
+  ) !important;
+}
+.left,
+.right {
+  flex: 1;
+}
+
+.skills .container h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+.skills .container p {
+  margin: 20px 0px;
+  color: #dfdfdf;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.skills .container .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%,
+    rgba(0, 0, 0, 0.03974089635854339) 100%
+  );
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  background-color: #fefefe;
+  margin: 10px;
+  border: 1px solid rgb(248, 222, 29);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.tools .tools-type {
+  background-color: rgb(248, 222, 29);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.tools .tools-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  color: #eeeeee;
+}
+.right-sec2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    height: auto;
+  }
+  .skills .container {
+    flex-direction: column;
+  }
+  .skills .container h2 {
+    font-size: 2.3rem;
+  }
+  .tools {
+    margin: 5px;
+    font-size: small;
+    margin-bottom: 20px;
+    min-width: 300px;
+  }
+  .tools .tools-items {
+    gap: 5px;
+    margin-right: 10px;
+  }
+  .tools .tools-type {
+    background-color: green;
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+  .sub-heading svg {
+    width: 30px;
+  }
+  iframe {
+    width: 100% !important;
+  }
+}

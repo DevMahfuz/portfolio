@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Tags</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <div id="tagcloud"></div>
+
+    <script src="./svg3dtagcloud.js"></script>
+
+    <script>
+      var entries = [
+        {
+          image: "./img/icon/html.png",
+          width: "50",
+          height: "50",
+          url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+          target: "_blank",
+          tooltip: "HTML 5",
+        },
+        {
+          image: "./img/icon/css.png",
+          width: "50",
+          height: "50",
+          url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          target: "_blank",
+          tooltip: "CSS",
+        },
+        {
+          image: "/img/icon/js.png",
+          width: "50",
+          height: "50",
+          url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          target: "_blank",
+          tooltip: "JavaScript",
+        },
+        {
+          image: "/img/icon/bootstrap.png",
+          width: "50",
+          height: "50",
+          url: "https://getbootstrap.com/",
+          target: "_blank",
+          tooltip: "Bootstrap",
+        },
+        {
+          image: "/img/icon/bluma.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Bluma",
+        },
+        {
+          image: "/img/icon/react.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "React",
+        },
+        {
+          image: "/img/icon/node.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Node",
+        },
+        {
+          image: "/img/icon/vscode.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "VS code",
+        },
+        {
+          image: "/img/icon/next.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Next js",
+        },
+        {
+          image: "/img/icon/wordpress.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "WordPress",
+        },
+        {
+          image: "/img/icon/git.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Git",
+        },
+        {
+          image: "/img/icon/github.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Github",
+        },
+        {
+          image: "/img/icon/mysql.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "MySQL",
+        },
+        {
+          image: "/img/icon/mongodb.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "MongoDB",
+        },
+        {
+          image: "/img/icon/sqlite3.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "SQLite3",
+        },
+        {
+          image: "/img/icon/express.png",
+          width: "50",
+          height: "50",
+          url: "#",
+          target: "_blank",
+          tooltip: "Express",
+        },
+      ];
+
+      var settings = {
+        entries: entries,
+        width: 480,
+        height: 480,
+        radius: "65%",
+        radiusMin: 75,
+        bgDraw: true,
+        bgColor: "transparent",
+        opacityOver: 1.0,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 800,
+        speed: 0.5,
+        fontFamily: "Oswald, Arial, sans-serif",
+        fontSize: "15",
+        fontColor: "#fff",
+        fontWeight: "normal", //bold
+        fontStyle: "normal", //italic
+        fontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+        fontToUpperCase: true,
+        tooltipFontFamily: "Oswald, Arial, sans-serif",
+        tooltipFontSize: "11",
+        tooltipFontColor: "#fff",
+        tooltipFontWeight: "normal", //bold
+        tooltipFontStyle: "normal", //italic
+        tooltipFontStretch: "normal", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+        tooltipFontToUpperCase: false,
+        tooltipTextAnchor: "left",
+        tooltipDiffX: 0,
+        tooltipDiffY: 10,
+      };
+      var svg3DTagCloud = new SVG3DTagCloud(
+        document.getElementById("tagcloud"),
+        settings
+      );
+    </script>
+  </body>
+</html>

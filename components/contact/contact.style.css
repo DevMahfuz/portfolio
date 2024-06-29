@@ -1,0 +1,119 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #292930;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact .contact-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #030303;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b2b2b2;
+  padding: 50px;
+}
+
+.contact .contact-wrapper .left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .contact-wrapper h3 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.contact-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.contact-option-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b2b2b2;
+}
+#contact > div > div.left > div > div.contact-option-icon > svg {
+  width: 50px;
+}
+.contact-option-text h4 {
+  font-size: 1.5rem;
+}
+.contact-option-text a {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+.contact .contact-wrapper .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .contact-wrapper .right form {
+  width: 100%;
+}
+.right form input {
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+.mail-wrapper input,
+.subject-wrapper input {
+  width: 100%;
+}
+.name-wraper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.text-area-wrapper textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+.right form .submit-btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.right form .submit-btn:hover {
+  color: #fff;
+  background-color: #797979;
+}
+
+.form-success-massate {
+  width: 100%;
+  text-align: center;
+}
+.form-success-massate svg {
+  color: green;
+  margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact {
+    height: auto;
+  }
+  .contact .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact .contact-wrapper h3 {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+}

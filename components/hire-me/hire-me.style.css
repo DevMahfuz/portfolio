@@ -1,0 +1,88 @@
+.hire-me {
+  width: 100%;
+  background-color: #292930;
+  min-height: 100vh;
+  background-image: url(https://softr-assets-eu-prod.s3.eu-central-1.amazonaws.com/applications/8f7af9fb-a550-425d-b327-48195c193a5f/assets/6b8b1aa7-54df-4646-a54d-852caa847833.svg),
+    url(https://softr-assets-eu-prod.s3.eu-central-1.amazonaws.com/applications/8f7af9fb-a550-425d-b327-48195c193a5f/assets/8c077d2c-6aae-42ee-96a6-25e1292a60c2.svg);
+  background-repeat: no-repeat;
+  background-position: 105% center, -29% 100%;
+  background-size: 30%, 35%;
+}
+.hire-me .container .section-heading {
+  font-size: 30px;
+  position: relative;
+  padding-left: 10px;
+  max-width: 100%;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(247, 210, 26);
+}
+
+.hire-me .container .section-heading::before {
+  content: ""; /* Ensure the pseudo-element is created */
+  display: block; /* or inline-block depending on your needs */
+  position: absolute; /* Or relative/absolute depending on positioning */
+  left: -16px;
+  width: 50px; /* Adjust width and height as needed */
+  height: 50px; /* Adjust width and height as needed */
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 239, 59, 0.096) 0%,
+    rgba(241, 117, 8, 0.237) 100%
+  ) !important;
+}
+.hire-me h2 {
+  font-size: 4.8rem;
+  color: #fff;
+}
+.marketplace-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.marketplace-container .fiver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1dbf73;
+  flex: 1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+.marketplace-container .upwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  flex: 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+.marketplace-container svg {
+  width: 300px;
+  transition: all 0.3s ease-out;
+}
+
+.marketplace-container .fiver:hover svg {
+  scale: 0.8;
+}
+
+.marketplace-container .upwork:hover svg {
+  scale: 0.8;
+}
+
+@media only screen and (max-width: 800px) {
+  .hire-me h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+}

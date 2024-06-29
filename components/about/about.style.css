@@ -1,0 +1,165 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: #e0e0e0;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .container .left,
+.about .container .right {
+  flex: 1;
+}
+.about .container .left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.about .container .right {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.about .container .right .section-heading {
+  font-size: 30px;
+  position: relative;
+  padding-left: 10px;
+  max-width: 100%;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: green;
+}
+.about .container .right .section-heading::before {
+  content: ""; /* Ensure the pseudo-element is created */
+  display: block; /* or inline-block depending on your needs */
+  position: absolute; /* Or relative/absolute depending on positioning */
+  left: -16px;
+  width: 50px; /* Adjust width and height as needed */
+  height: 50px; /* Adjust width and height as needed */
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(76, 175, 81, 0.4) 0%,
+    rgba(76, 175, 81, 0.01) 100%
+  ) !important;
+}
+.about .container .right h2 {
+  color: #000;
+  font-size: 4rem;
+}
+.about .container .right p {
+  margin: 20px 0px 0px 10px;
+  text-align: justify;
+  color: #222222;
+}
+.about .container .right .info {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text-style {
+  display: inline-block;
+  position: absolute;
+  font-size: 160px;
+  line-height: 1;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  -moz-transform: matrix(0, -1, 1, 0, 0, 0);
+  -webkit-transform: matrix(0, -1, 1, 0, 0, 0);
+  -ms-transform: matrix(0, -1, 1, 0, 0, 0);
+  right: 40%;
+}
+
+.about-text-style span {
+  color: #e2ecf6;
+  background: linear-gradient(90deg, #e2ecf6, #e2ecf6, green, #e2ecf6, #e2ecf6);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideColor 5s linear infinite;
+}
+
+.image-container {
+  perspective: 1000px; /* This gives the 3D perspective effect */
+}
+
+/* components/InteractiveImage.module.css */
+.imageContainer {
+  perspective: 1000px; /* This gives the 3D perspective effect */
+}
+
+.imageContainer img {
+  height: auto;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+.about .top-wave {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+}
+.about .bottom-wave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    min-height: auto;
+    padding-top: 0px;
+  }
+  .about .container .left {
+    display: none;
+  }
+  .about .container .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about .container .right h2 {
+    font-size: 2.5rem;
+  }
+  .info-item {
+    font-size: 0.7rem;
+  }
+}
+
+@keyframes slideColor {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

@@ -26,7 +26,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .c-shape-3 {
@@ -40,7 +40,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
 }
 .counter .count {
   display: flex;

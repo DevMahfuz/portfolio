@@ -15,6 +15,7 @@
   margin: 0 auto;
 }
 .hero-text {
+  position: relative;
   flex: 1;
   height: 100vh;
   color: #fff;
@@ -216,13 +217,65 @@
   border-width: 0;
 }
 
-@keyframes corsormove {
-  from {
-    padding-top: -0px;
-  }
-  to {
-    padding-top: 10px;
-  }
+.pay-btn-container {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+}
+.btn-play {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 26px;
+  border-radius: 100%;
+  border: none;
+  outline: none !important;
+  padding: 18px 20px 20px 28px;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.btn-play:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #e9e9e9;
+  border-radius: 100%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #4b4b4b;
+  border-radius: 100%;
+  transition: all 200ms;
+}
+
+.btn-play span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  left: -1px;
+  border-left: 16px solid #ffffff;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
 }
 
 @media only screen and (max-width: 800px) {
@@ -265,12 +318,41 @@
   .social-container nav {
     text-align: center !important;
   }
+  .pay-btn-container {
+    position: absolute;
+    bottom: 37vh;
+    left: auto;
+    z-index: 10;
+  }
+  .cursor-icon {
+    bottom: 40px;
+  }
 }
-@media only screen and (max-width: 398px) {
+@media only screen and (max-width: 380px) {
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .hero-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes corsormove {
+  from {
+    padding-top: -0px;
+  }
+  to {
+    padding-top: 10px;
+  }
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+    opacity: 0;
   }
 }

@@ -1,6 +1,7 @@
 import About from "@/components/about/about";
 import Contact from "@/components/contact/contact";
 import Counter from "@/components/counter/counter";
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
 import HireMe from "@/components/hire-me/hire-me";
@@ -23,6 +24,7 @@ export default function Home() {
       <WhyME />
       <HireMe />
       <Contact />
+      <Footer />
     </main>
   );
 }

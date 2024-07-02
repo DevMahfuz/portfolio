@@ -67,7 +67,7 @@ const Portfolio = () => {
       </svg>
       <div className="container">
         <div className="section-heading">portfolio</div>
-        <h2>Here are some of my work</h2>
+        <h2>Here Are Some Of My Work</h2>
 
         <Projects />
       </div>

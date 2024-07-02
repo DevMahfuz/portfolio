@@ -107,9 +107,7 @@ const Contact = () => {
                 />
               </div>
               <div className="text-area-wrapper">
-                <label>
-                  <textarea></textarea>
-                </label>
+                <textarea placeholder="Type your message here"></textarea>
               </div>
               <button className="submit-btn" type="submit">
                 Send Message

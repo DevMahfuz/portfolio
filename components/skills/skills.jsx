@@ -61,8 +61,22 @@ const Skills = () => {
             <div className="tools-items">
               <strong>React</strong>
               <strong>Next.js</strong>
-              <strong>Redux</strong>
               <strong>Bootstrap</strong>
+            </div>
+          </div>
+
+          <div className="tools">
+            <div className="tools-type">Managing State...</div>
+            <div className="tools-items">
+              <strong>React Context API</strong>
+              <strong>Redux</strong>
+            </div>
+          </div>
+          <div className="tools">
+            <div className="tools-type">Animation...</div>
+            <div className="tools-items">
+              <strong>GSAP</strong>
+              <strong>Framer Motion</strong>
             </div>
           </div>
 
@@ -74,6 +88,7 @@ const Skills = () => {
               <strong>JWT</strong>
             </div>
           </div>
+
           <div className="tools">
             <div className="tools-type">Database...</div>
             <div className="tools-items">
@@ -86,6 +101,7 @@ const Skills = () => {
           <div className="tools">
             <div className="tools-type">CMS/Blog...</div>
             <div className="tools-items">
+              <strong>Strapi</strong>
               <strong>WordPress</strong>
             </div>
           </div>

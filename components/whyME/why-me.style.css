@@ -3,13 +3,25 @@
   position: relative;
   background-color: linear-gradient(145deg, #f8f8f8 0%, #ffffffbc 100%);
   min-height: 100vh;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 250px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.why-me::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(/img/bg7.png) no-repeat top center fixed;
+  background-size: 100%;
+  content: "";
+  z-index: -1;
+  opacity: 0.5;
+}
 .whyme-toper {
   position: absolute;
   width: 100%;
@@ -74,6 +86,7 @@
 }
 .why-me .content img {
   width: 400px;
+  height: auto;
 }
 .wave6 {
   width: 100%;

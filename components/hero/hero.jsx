@@ -2,6 +2,8 @@ import Link from "next/link";
 import "./hero.style.css";
 import TipeTitle from "./type-title";
 import Image from "next/image";
+import VideoModal from "./video-model";
+import VideoButton from "./video-button";
 
 const Hero = () => {
   const svgContent = `<svg width="400" height="540" xmlns="http://www.w3.org/2000/svg">
@@ -96,6 +98,12 @@ const Hero = () => {
               </nav>
             </div>
           </div>
+          <div className="pay-btn-container">
+            {/* <button type="button" className="btn-play">
+              <span></span>
+            </button> */}
+            <VideoButton />
+          </div>
         </div>
         <div className="hero-img">
           <div className="img-wrapper">
@@ -103,17 +111,17 @@ const Hero = () => {
             <img className="shape1" src="/img/shape1.png" alt="shape1" />
             <img className="shape2" src="/img/shape2.png" alt="shape2" />
             <Image
-              src="/img/mahfuz.png"
+              src="/img/mahfuz.webp"
               alt="Mahfuzr's profile pic"
               width={500}
               height={656}
               placeholder="blur"
               blurDataURL={blurDataURL}
-              priority
             />
           </div>
         </div>
       </div>
+
       <div className="cursor-icon">
         <Link
           href="#about"

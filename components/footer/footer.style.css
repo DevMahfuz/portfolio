@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  background-color: #292930;
+}
+
+.footer .container {
+  padding-top: 50px;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: aliceblue;
+  text-align: center;
+}

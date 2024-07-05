@@ -17,7 +17,7 @@ const ReviewSlider = () => {
           <blockquote cite="https://www.fiverr.com/mahfuzm444">
             <i>
               Third HTML coding order with Mahfuzur. If I need more work in the
-              future, I'll definitely reach out to him again!
+              future, I&apos;ll definitely reach out to him again!
             </i>
           </blockquote>
           <div className="testimonial-info">
@@ -73,7 +73,7 @@ const ReviewSlider = () => {
           <blockquote cite="https://www.fiverr.com/mahfuzm444">
             <i>
               Yes I am going to order more gigs from this seller, I would
-              recommend this seller to any potential buyer The seller's
+              recommend this seller to any potential buyer The seller&apos;s
               performance is outstanding, and his professionalism is amazing. I
               am more than satisfied with the job done.
             </i>

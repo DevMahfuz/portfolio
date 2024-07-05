@@ -13,11 +13,11 @@ const Skills = () => {
             industry best practices to ensure exceptional results.
           </p>
           <p>
-            I like to introduce myself as a JavaScript developer. I'm a full
-            stack developer but My root experience in front-end development. I
-            create a user interface that's interactive, responsive, and
-            Cross-browser compatibility with all modern browsers using HTML,
-            CSS, JavaScript.
+            I like to introduce myself as a JavaScript developer. I&apos;m a
+            full stack developer but My root experience in front-end
+            development. I create a user interface that&apos;s interactive,
+            responsive, and Cross-browser compatibility with all modern browsers
+            using HTML, CSS, JavaScript.
           </p>
         </div>
         <div className="right">

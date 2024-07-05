@@ -15,7 +15,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="container">
         <div className="hero-text">
-          <p>Hello Budy! I'm</p>
+          <p>Hello Budy! I&apos;m</p>
           <h1>Mahfuzur Rahman</h1>
           <TipeTitle />
           <div className="social-container">

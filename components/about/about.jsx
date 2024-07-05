@@ -65,7 +65,7 @@ const About = () => {
         </div>
         <div className="right">
           <div className="section-heading">About Me</div>
-          <h2>I'm A Full stack Web Developer</h2>
+          <h2>I&apos;m A Full stack Web Developer</h2>
           <p>
             My name is Mahfuzur Rahman, a passionate full stack web developer
             from Bangladesh. With a strong background in both front-end and

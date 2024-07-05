@@ -23,7 +23,7 @@ const Hero = () => {
               <nav style={{ "--count": 4 }}>
                 <ul>
                   <li style={{ "--index": 1 }}>
-                    <a href="#" target="_blank" rel="noreferrer noopener">
+                    <a href="#" rel="noreferrer noopener">
                       <span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

@@ -278,7 +278,12 @@
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
 }
-
+.sc-desktop {
+  display: block;
+}
+.sc-mobile {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   .hero .container {
     flex-direction: column-reverse;
@@ -289,10 +294,10 @@
     align-items: center;
   }
   .hero-text h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .hero-text h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .social-container a {
     padding: 1px 5px;
@@ -309,15 +314,15 @@
   .img-wrapper img {
     scale: 0.7;
   }
-  .social-container ul {
-    grid-template-columns: auto repeat(
-        3,
-        calc((var(--active, 0) * 100px) + 10px)
-      );
-    transition: grid-template-columns 0.35s var(--ease-elastic-1);
+  .sc-desktop {
+    display: none;
   }
-  .social-container nav {
-    text-align: center !important;
+  .sc-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
   }
   .pay-btn-container {
     position: absolute;

@@ -29,8 +29,6 @@ const Skills = () => {
             scrolling="NO"
             src="/tags.html"
             allowFullScreen=""
-            width="480"
-            height="480"
           ></iframe>
         </div>
       </div>

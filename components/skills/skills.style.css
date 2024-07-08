@@ -58,6 +58,7 @@
 }
 
 .skills .container .right {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -69,7 +70,10 @@
     rgba(0, 0, 0, 0.03974089635854339) 100%
   );
 }
-
+.right iframe {
+  width: 500px;
+  height: 500px;
+}
 .tools {
   display: flex;
   justify-content: space-between;
@@ -139,7 +143,8 @@
   .sub-heading svg {
     width: 30px;
   }
-  iframe {
-    width: 100% !important;
+  .right iframe {
+    width: 400px;
+    height: 400px;
   }
 }

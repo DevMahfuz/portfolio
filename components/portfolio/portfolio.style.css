@@ -153,6 +153,31 @@
   padding: 20px 0px;
 }
 
+.project-view .container table {
+  color: #e0e0e0;
+}
+
+#portfolio > div > div.project-container > div.project-view > section > div {
+  margin-bottom: 100px;
+}
+.wp-block-button {
+  margin: 20px auto;
+}
+.wp-block-button a {
+  padding: 10px 50px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wp-block-button a:hover {
+  background-color: chartreuse;
+  color: #000;
+}
 @media screen and (max-width: 800px) {
   .portfolio {
     padding-top: 100px;

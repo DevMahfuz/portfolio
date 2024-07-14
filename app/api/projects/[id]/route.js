@@ -6,6 +6,7 @@ export async function GET(request, { params }) {
       headers: {
         Authorization: `Bearer ${process.env.WP_API_KEY}`,
       },
+      next: { revalidate: 60 },
     }
   );
   const data = await res.json();

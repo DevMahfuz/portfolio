@@ -4,6 +4,7 @@ import useSWR from "swr";
 import Fetcher from "@/util/featcher/fetcher";
 import { useState } from "react";
 import Project from "./Project";
+import Image from "next/image";
 
 const Projects = () => {
   const { data, error, isLoading } = useSWR("/api/projects", Fetcher);
@@ -38,7 +39,12 @@ const Projects = () => {
               onClick={() => setIsProjectOpen(project.id)}
             >
               <div className="project-img">
-                <img src={project.yoast_head_json.og_image[0].url} alt="" />
+                <Image
+                  src={project.yoast_head_json.og_image[0].url}
+                  width={400}
+                  height={225}
+                  alt={`${project.title.rendered}'s Image`}
+                />
               </div>
               <div className="project-meta">{project.title.rendered}</div>
             </div>

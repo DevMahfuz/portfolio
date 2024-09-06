@@ -125,9 +125,27 @@ const Hero = () => {
         </div>
         <div className="hero-img">
           <div className="img-wrapper">
-            <img className="shape4" src="/img/shape4.png" alt="shape4" />
-            <img className="shape1" src="/img/shape1.png" alt="shape1" />
-            <img className="shape2" src="/img/shape2.png" alt="shape2" />
+            <Image
+              className="shape4"
+              src="/img/shape4.png"
+              width={94}
+              height={98}
+              alt="shape4"
+            />
+            <Image
+              className="shape1"
+              src="/img/shape1.png"
+              width={88}
+              height={74}
+              alt="shape1"
+            />
+            <Image
+              className="shape2"
+              src="/img/shape2.png"
+              width={53}
+              height={44}
+              alt="shape2"
+            />
             <Image
               src="/img/mahfuz.webp"
               alt="Mahfuzr's profile pic"

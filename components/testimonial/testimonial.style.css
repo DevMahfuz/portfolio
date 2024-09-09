@@ -5,7 +5,6 @@
   padding: 120px 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: #fff;
 }
@@ -17,9 +16,9 @@
 }
 .testimonial h2 {
   color: #fff;
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 30px 0px;
-  text-align: center;
+  text-align: left;
 }
 
 .testimonial__shape-3 {
@@ -40,7 +39,8 @@
   background: transparent;
   text-transform: uppercase;
   font-weight: bold;
-  color: green;
+  color: rgb(251, 255, 34);
+  text-align: left;
 }
 .testimonial .section-heading::before {
   content: ""; /* Ensure the pseudo-element is created */
@@ -52,8 +52,8 @@
   border-radius: 30px;
   background: linear-gradient(
     135deg,
-    rgba(76, 175, 81, 0.4) 0%,
-    rgba(76, 175, 81, 0.01) 100%
+    rgba(251, 229, 124, 0.599) 0%,
+    rgba(255, 255, 255, 0.334) 100%
   ) !important;
 }
 .testimonial-item {

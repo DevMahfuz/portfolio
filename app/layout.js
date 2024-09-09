@@ -8,7 +8,7 @@ export const metadata = {
     title: "Looking For A Full Stack Web Developer?",
     description: "I'm A JavaScript programer. Ready to code for your vition",
     url: "https://mahfuzur.me",
-    siteName: "mahfuzur.m",
+    siteName: "mahfuzur.me",
     images: [
       {
         url: "https://mahfuzur.me/img/feature.jpg", // Must be an absolute URL
@@ -21,6 +21,9 @@ export const metadata = {
   },
   verification: {
     google: "Ca2GwK0LxF6_0yh3jIY38kDjWC6AQDsGWinrF-9Eelw",
+  },
+  alternates: {
+    canonical: "https://mahfuzur.me/", // Add your canonical URL here
   },
 };
 

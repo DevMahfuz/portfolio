@@ -114,6 +114,7 @@
   height: auto;
   transition: transform 0.1s;
   transform-style: preserve-3d;
+  width: 400px;
 }
 
 .about .top-wave {

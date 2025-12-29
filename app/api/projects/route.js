@@ -1,14 +1,19 @@
-export async function GET() {
-  const res = await fetch(
-    "https://api.mahfuzur.me/wp-json/wp/v2/projects?_fields=id,title,excerpt,yoast_head_json.og_image",
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.WP_API_KEY}`,
-      },
-      next: { revalidate: 60 },
-    }
-  );
-  const data = await res.json();
+import { NextResponse } from "next/server";
+import path from "path";
+import { promises as fs } from "fs";
 
-  return Response.json({ data });
+export async function GET() {
+  try {
+    const jsonPath = path.join(process.cwd(), "data", "projects.json");
+    const fileContents = await fs.readFile(jsonPath, "utf-8");
+    const projects = JSON.parse(fileContents);
+
+    return NextResponse.json(projects, { status: 200 });
+  } catch (error) {
+    console.error("Error reading projects.json:", error);
+    return NextResponse.json(
+      { error: "Failed to load projects data" },
+      { status: 500 }
+    );
+  }
 }

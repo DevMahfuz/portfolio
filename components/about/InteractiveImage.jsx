@@ -57,7 +57,7 @@ const InteractiveImage = () => {
         alt="image of Mahfuz"
         placeholder="blur"
         blurDataURL={blurDataURL}
-        style={{ width: "auto", height: "auto" }}
+        // style={{ width: "auto", height: "auto" }}
       />
     </div>
   );

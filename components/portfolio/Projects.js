@@ -28,7 +28,8 @@ const Projects = () => {
   }
 
   if (data) {
-    let projects = data.data;
+    let projects = data;
+    console.log(projects);
     return (
       <div className="project-container">
         {projects.map((project) => {
@@ -36,17 +37,17 @@ const Projects = () => {
             <div
               className="project-item"
               key={project.id}
-              onClick={() => setIsProjectOpen(project.id)}
+              onClick={() => setIsProjectOpen(project)}
             >
               <div className="project-img">
                 <Image
-                  src={project.yoast_head_json.og_image[0].url}
+                  src={`/img/portfolio/${project.thumbnail}`}
                   width={400}
                   height={225}
-                  alt={`${project.title.rendered}'s Image`}
+                  alt={`${project.title}'s Image`}
                 />
               </div>
-              <div className="project-meta">{project.title.rendered}</div>
+              <div className="project-meta">{project.title}</div>
             </div>
           );
         })}
@@ -55,7 +56,7 @@ const Projects = () => {
             <button className="btn" onClick={() => setIsProjectOpen(null)}>
               Close
             </button>
-            <Project id={isProjectOpen} />
+            <Project project={isProjectOpen} />
           </div>
         )}
       </div>

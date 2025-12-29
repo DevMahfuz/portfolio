@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "[Brushed] Beauty Services Booking App",
+    "description": "Online beauty services booking application that allows users to book various beauty treatments and services with ease.",
+    "thumbnail": "Brushed-thumb.jpg",
+    "mainImage": "Brushed-main.jpg",
+    "technologies": ["Next.js", "Tailwind CSS", "swr"],
+    "projectLink": "https://brushed.vercel.app/"
+  },
+  {
+    "id": "2",
+    "title": "ReadingPost - Online Bookstore",
+    "description": "Online Bookstore for Selling books of all genres with user-friendly interface and secure payment gateway.",
+    "thumbnail": "ReadingPost-thumb.jpg",
+    "mainImage": "ReadingPost-main.jpg",
+    "technologies": ["WordPress", "WooCommerce", "Elementor", "SEO"],
+    "projectLink": "https://readingpost.net/"
+  }
+]

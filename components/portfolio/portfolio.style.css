@@ -148,20 +148,33 @@
   font-size: 2rem;
   color: #fff;
 }
+.project-view .container h3 {
+  color: #fff;
+}
 .project-view .container p {
   color: #e7e7e7;
   padding: 20px 0px;
 }
 
-.project-view .container table {
-  color: #e0e0e0;
+.technologies-used {
+  padding: 10px 0px;
 }
-
-#portfolio > div > div.project-container > div.project-view > section > div {
-  margin-bottom: 100px;
+.technologies-used ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.technologies-used ul li {
+  background-color: white;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .wp-block-button {
   margin: 20px auto;
+  margin-bottom: 100px;
 }
 .wp-block-button a {
   padding: 10px 50px;

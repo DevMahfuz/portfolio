@@ -1,38 +1,34 @@
 "use client";
 
-import Fetcher from "@/util/featcher/fetcher";
-import useSWR from "swr";
 import Image from "next/image";
 
-const Project = ({ id }) => {
-  const { data, error, isLoading } = useSWR(`/api/projects/${id}`, Fetcher);
+const Project = ({ project }) => {
+  return (
+    <section className="container">
+      <Image
+        src={`/img/portfolio/${project.mainImage}`}
+        width={543}
+        height={306}
+        alt={`${project.title}'s Image`}
+      />
+      <h1>{project.title}</h1>
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error occurred</div>;
-  }
-
-  if (data) {
-    let project = data.data;
-    return (
-      <section className="container">
-        <Image
-          src={project.yoast_head_json.og_image[0].url}
-          width={543}
-          height={306}
-          alt={`${project.title.rendered}'s Image`}
-        />
-        <h1>{project.title.rendered}</h1>
-
-        <div dangerouslySetInnerHTML={{ __html: project.content.rendered }} />
-      </section>
-    );
-  }
-
-  return null;
+      <p>{project.description}</p>
+      <div className="technologies-used">
+        <h3>Technologies Used:</h3>
+        <ul>
+          {project.technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="wp-block-button">
+        <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+          Live Project
+        </a>
+      </div>
+    </section>
+  );
 };
 
 export default Project;
